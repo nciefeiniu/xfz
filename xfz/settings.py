@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -28,7 +27,6 @@ SECRET_KEY = 's63h(4gp%y*b!usfq@4dcwj-@p_8&%w#_7_1g5!m!1#0*_6ipl'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '192.168.0.102', '192.168.232.133']
-
 
 # Application definition
 
@@ -87,7 +85,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'xfz.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -98,10 +95,9 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': 3306,
         'USER': 'root',
-        'PASSWORD': 'wang2819966'
+        'PASSWORD': '123456'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -157,7 +153,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -245,5 +240,5 @@ HAYSTACK_CONNECTIONS = {
     }
 }
 
-#增删改后自动创建索引（例如：新添加新闻入库之后，会自动建立索引，不需要自己敲python manage.py rebuild_index）
+# 增删改后自动创建索引（例如：新添加新闻入库之后，会自动建立索引，不需要自己敲python manage.py rebuild_index）
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
